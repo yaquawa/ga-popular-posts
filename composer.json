@@ -1,0 +1,30 @@
+{
+    "name": "yaquawa/ga-popular-posts",
+    "description": "A plugin for WordPress to get the most popular posts by using Google Analytics.",
+    "type": "project",
+    "require": {
+        "php": ">=5.6.4",
+        "google/apiclient": "^2.0",
+        "laraish/options": "0.1.*",
+        "laraish/dough-framework": "1.*"
+    },
+    "authors": [
+        {
+            "name": "yaquawa",
+            "email": "yaquawa@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "app/Foundation/helpers.php"
+        ],
+        "psr-4": {
+            "GAPP\\": "app/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist"
+    }
+}
