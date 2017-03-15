@@ -11,7 +11,6 @@ return [
     'shortcodes' => [GAPP\Shortcodes\Shortcode::class],
 
     'providers' => [
-        \Laraish\Dough\Foundation\Providers\ActivatorsServiceProvider::class,
         \Laraish\Dough\Foundation\Providers\UninstallersServiceProvider::class,
         \Laraish\Dough\Foundation\Providers\ShortcodesServiceProvider::class,
         \Laraish\Dough\Foundation\Providers\SettingsPagesServiceProvider::class,
@@ -21,6 +20,5 @@ return [
         \GAPP\Providers\CredentialServiceProvider::class,
         \GAPP\Providers\GoogleAnalyticsServiceProvider::class,
         \GAPP\Providers\AppServiceProvider::class,
-        \GAPP\Providers\NotificationServiceProvider::class,
     ],
 ];

@@ -6,8 +6,13 @@ use Laraish\Dough\Application;
 
 class Uninstaller
 {
-    public function handle(Application $app)
+    /**
+     * @var Application
+     */
+    public static $app;
+
+    public static function uninstall()
     {
-        $app->make('options')->delete();
+        static::$app->make('options')->delete();
     }
 }
