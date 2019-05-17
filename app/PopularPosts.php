@@ -41,7 +41,7 @@ class PopularPosts
         $defaultConfig = [
             'view_id'         => $viewId,
             'metrics'         => $metrics,
-            'dimensions'      => ['ga:pagePath', 'ga:pageTitle', 'ga:hostname'],
+            'dimensions'      => ['ga:pagePath', 'ga:hostname'],
             'start_date'      => ($options->get('last_n_days') ?: 30) . 'daysAgo',
             'end_date'        => 'today',
             'order_bys'       => $options->get('order_bys') ?: [$metrics[0]],
